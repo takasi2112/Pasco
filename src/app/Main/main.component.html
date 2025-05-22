@@ -302,46 +302,7 @@
         </div>
     </footer>
 
-    <script>
-        // Toggle between monthly and yearly pricing
-        function togglePricing(period) {
-            const monthlyBtn = document.querySelector('.pricing-tabs .tab-btn:first-child');
-            const yearlyBtn = document.querySelector('.pricing-tabs .tab-btn:last-child');
-            const prices = document.querySelectorAll('.price');
-            
-            if (period === 'monthly') {
-                monthlyBtn.classList.add('active');
-                yearlyBtn.classList.remove('active');
-                
-                prices[0].innerHTML = '₵9<span>/month</span>';
-                prices[1].innerHTML = '₵19<span>/month</span>';
-                prices[2].innerHTML = '₵29<span>/month</span>';
-            } else {
-                monthlyBtn.classList.remove('active');
-                yearlyBtn.classList.add('active');
-                
-                // Apply 20% discount for yearly pricing
-                prices[0].innerHTML = '₵86<span>/year</span>';
-                prices[1].innerHTML = '₵182<span>/year</span>';
-                prices[2].innerHTML = '₵278<span>/year</span>';
-            }
-        }
-        
-        // Toggle FAQ answers
-        function toggleFAQ(element) {
-            const faqItem = element.parentElement;
-            const answer = faqItem.querySelector('.faq-answer');
-            
-            element.classList.toggle('active');
-            answer.classList.toggle('active');
-        }
-        
-        // Initialize first FAQ as open
-        document.addEventListener('DOMContentLoaded', function() {
-            const firstFaq = document.querySelector('.faq-question');
-            firstFaq.classList.add('active');
-            firstFaq.nextElementSibling.classList.add('active');
-        });
-    </script>
+    
+  
 <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Takasi212/website" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
